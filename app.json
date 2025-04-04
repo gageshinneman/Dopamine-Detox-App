@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Detox2",
-    "slug": "Detox2",
+    "name": "detox",
+    "slug": "detox",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.detox"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.detox"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,13 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-check-installed-apps",
+        {
+          "android": [],
+          "ios": ["fb", "shareddocuments"]
         }
       ]
     ],
